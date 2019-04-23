@@ -2,4 +2,15 @@
 СПИСОК ПЛАНИРУЕМЫХ ЗАДАЧ.
 ==========================
 1. Хранение данных в CSV.
+--------------------------
+    Разобраться с записью данных в формат CSV
+    Источники:
+        https://metanit.com/python/tutorial/4.3.php                     - Файлы CSV
+        https://python-scripts.com/import-csv-python                    - Обрабатываем csv файлы — Модуль csv
+        https://elekt.tech/python/python_modules/modul-csv-python.html  - Модуль csv — Python
+        https://ideafix.name/wp-content/uploads/2012/05/Python-7.pdf    - Python. Лекция 7. Работа с данными в различных форматах.
+
+     ПРОРАБОТАТЬ!!!
+     https://python-scripts.com/import-csv-python                    - Обрабатываем csv файлы — Модуль csv
+
 2.
