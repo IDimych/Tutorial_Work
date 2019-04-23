@@ -13,4 +13,7 @@
      ПРОРАБОТАТЬ!!!
      https://python-scripts.com/import-csv-python                    - Обрабатываем csv файлы — Модуль csv
 
-2.
+2. При добавлении данный в файл CSV, добавляются поля.
+    https://www.programcreek.com/python/example/3190/csv.DictWriter - Python csv.DictWriter() Examples
+    Как сделать, чтобы поля вставлялить при создании файла, в при добавлении, добавлялись только данные.
+    см TODO
