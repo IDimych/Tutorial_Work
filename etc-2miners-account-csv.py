@@ -17,9 +17,8 @@ fileName = datetime.datetime.now().strftime("%d-%m-%Y")+".csv"
 # Проверить, есть ли файл, если есть, пишем в него, если нет, то создаем новый с полями
 if not os.path.isfile(fileName):
     print("Файла нет!")
-    columns = ["DateTime", "24hnumreward","24hreward","currentHashrate","hashrate"]
     with open(fileName, "a", newline="") as file:
-        columns = ["DateTime", "24hnumreward", "24hreward", "currentHashrate", "hashrate"]
+        columns = ["DateTime", "24hnumreward", "24hreward", "currentHashrate", "hashrate","paymentsTotal","roundShares","workersOffline","workersOnline","workersTotal"]
         writer = csv.DictWriter(file, fieldnames=columns)
         writer.writeheader()
 
@@ -31,10 +30,16 @@ newAccounts["24hnumreward"] = accounts["24hnumreward"]
 newAccounts["24hreward"] = accounts["24hreward"]
 newAccounts["currentHashrate"] = accounts["currentHashrate"]
 newAccounts["hashrate"] = accounts["hashrate"]
+newAccounts["paymentsTotal"] = accounts["paymentsTotal"]
+newAccounts["roundShares"] = accounts["roundShares"]
+newAccounts["workersOffline"] = accounts["workersOffline"]
+newAccounts["workersOnline"] = accounts["workersOnline"]
+newAccounts["workersTotal"] = accounts["workersTotal"]
 
 # TODO Сделать добавление строк, а не перезапись, но чтобы при добавлении, добавлялись данные, поля должны добавлять для нового файла
 with open(fileName, "+a", newline="") as file:
-    columns = ["DateTime", "24hnumreward","24hreward","currentHashrate","hashrate"]
+    columns = ["DateTime", "24hnumreward", "24hreward", "currentHashrate", "hashrate", "paymentsTotal", "roundShares",
+               "workersOffline", "workersOnline", "workersTotal"]
     writer = csv.DictWriter(file, fieldnames=columns)
     writer.writerow(newAccounts)
 
