@@ -17,9 +17,11 @@ print("===================================")
 # TODO Пройтись по словарю, выделить вокеры и считать данные каждого
 print("----------------------")
 print(accounts["workers"])
+print(type(accounts))
 print(len(accounts))
 print("----------------------")
 for key in accounts["workers"]:
+    # Наверно сделать добавление в словарь
     newWorkers["DateTime"] = curDateTime
     newWorkers["Rig"] = key
     newWorkers["lastBeat"]="val_lastBeat"
