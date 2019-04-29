@@ -14,8 +14,24 @@ response = urllib.request.urlopen(url)
 webContent = response.read().decode('utf8')
 print(webContent)
 
-f = open('etc_2miners.html', 'w', encoding='UTF8')
+f = open('etc_2miners-rewards.html', 'w', encoding='UTF8')
 f.write(webContent)
 f.close()
 
-#print(webContent.decode())
+url='https://etc.2miners.com/ru/account/0xc53a2409ef3c57eeab564b8a3d66d64ccc027cda#farms-tab'
+response = urllib.request.urlopen(url)
+webContent = response.read().decode('utf8')
+print(webContent)
+
+f = open('etc_2miners-farms.html', 'w', encoding='UTF8')
+f.write(webContent)
+f.close()
+
+url='https://etc.2miners.com/ru'
+response = urllib.request.urlopen(url)
+webContent = response.read().decode('utf8')
+print(webContent)
+
+f = open('etc_2miners.html', 'w', encoding='UTF8')
+f.write(webContent)
+f.close()
